@@ -1,0 +1,27 @@
+.league_table {
+    text-align: center;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.table {
+    color: green;
+
+    // background: linear-gradient(145deg, #202322, #1b1e1d);
+    // box-shadow: 7px 7px 14px #131514, -7px -7px 14px #292d2c;
+}
+
+.table td,
+.table th {
+    padding: 0.5rem;
+    font-weight: 400;
+}
+
+.table img {
+    width: 25px;
+}
+
+tbody {
+    color: #fff;
+    font-weight: 400;
+}

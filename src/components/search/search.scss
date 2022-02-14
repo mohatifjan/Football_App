@@ -1,0 +1,84 @@
+@import '../../base.scss';
+
+.search__button {
+    padding: 1rem 2rem;
+    border-radius: 45px;
+    box-shadow: $shadow-inset;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+}
+
+.search__box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 33, 32, 0.97);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+
+    &.open {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+.form__area {
+    max-width: 50%;
+    display: flex;
+    border-bottom: 1px solid $green;
+}
+
+.form__area input {
+    background-color: transparent;
+    width: 100%;
+    font-size: 1.5rem;
+    box-shadow: none;
+    color: #fff;
+}
+
+.form__area input:placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 3px;
+}
+
+// .form__area input:focus {
+//     outline: none;
+// }
+
+
+.search__button {
+    // done in base.scss
+}
+
+.search__icon {
+    margin-left: 1rem;
+}
+
+.search__close-icon {
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.search__results {
+    display: flex;
+}
+
+@media(max-width:$breakpoint-tablet) {
+    .form__area {
+        max-width: 95%;
+    }
+}

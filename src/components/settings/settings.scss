@@ -1,0 +1,45 @@
+@import '../../base.scss';
+
+.settings {
+    color: #fff;
+    height: 90vh;
+    width: 60%;
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    &__header {
+        flex: 0.3;
+    }
+
+    &__body {
+        font-size: 1.4rem;
+        flex: 0.7;
+
+        button {
+            font-size: 1.2rem;
+
+            &.logout {
+                color: red;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width:$breakpoint-tablet) {
+    .settings {
+        width: 95%;
+    }
+
+    .search__button {
+        margin: 0;
+    }
+
+    .settings__body-buttons {
+        margin: 0 4px;
+    }
+}

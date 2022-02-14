@@ -1,0 +1,128 @@
+@import '../../base.scss';
+
+.auth {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+    &__container {
+        height: 70vh;
+        padding: 4rem;
+        background: $background;
+        box-shadow: $shadow;
+        border-radius: 2rem;
+    }
+
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        span {
+            color: #fff;
+            cursor: pointer
+        }
+
+        img {
+            margin-top: 1rem;
+            width: 100%;
+        }
+
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        padding: 0 3rem;
+        text-align: center;
+
+        // later :)---------
+        // horizontal line
+        p {
+            border-bottom: 2px solid #4a534a;
+            line-height: 0.1em;
+            margin: 1rem 0;
+
+            span {
+                background: #1e2120;
+                padding: 0 10px;
+            }
+        }
+
+        form {
+            flex: 0.8;
+
+            button {
+                background: $green;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+        }
+
+        input,
+        button {
+            height: 2.5rem;
+            overflow: visible;
+            background: #4a534a;
+            border-radius: 0.8rem;
+            color: #fff;
+            font-size: inherit;
+            box-shadow: none;
+        }
+
+        // later :)---------------
+    }
+
+    // //alert
+    // &__message {
+    //     color: #fff;
+    //     border-radius: 5px;
+    //     padding: 0.2rem;
+    //     background: #ec0404bf;
+    // }
+}
+
+// @media(max-width:1096px) {
+//     .auth {
+//         padding: 0 6rem;
+//     }
+
+//     &__container {
+//         padding: 5rem 0;
+//         width: 100%;
+//     }
+// }
+
+
+
+@media (max-width:$breakpoint-tablet) {
+
+    .auth {
+        &__container {
+            height: 100vh;
+            padding: 3rem 1rem;
+            border-radius: 0;
+            box-shadow: none;
+
+        }
+
+        &__left {
+            img {
+                display: none;
+            }
+        }
+
+        // &__right {}
+    }
+}
+
+@media(max-width:$breakpoint-mobile) {
+    .auth__container {
+        padding: 1rem;
+    }
+
+    .auth__right {
+        padding: 0rem;
+    }
+}

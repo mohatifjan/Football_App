@@ -1,0 +1,18 @@
+@import '../../base.scss';
+
+.lineup {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        border-radius: 5px;
+        background: #343a40;
+        padding: 0.5rem;
+        margin: 1.5rem;
+    }
+}

@@ -1,0 +1,25 @@
+.lineups {
+    max-width: 700px;
+    margin: 0 auto;
+
+    &__navbar {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 40px;
+            background: #343a40;
+            padding: 4px;
+            margin: 0 0.5rem;
+            border-radius: 4px;
+        }
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        /* background: #3a3a3a; */
+        padding: 0.3rem;
+        padding-left: 0.5rem;
+    }
+}

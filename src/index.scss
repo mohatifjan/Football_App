@@ -1,0 +1,76 @@
+@import "./base.scss";
+
+*,
+html {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: $background;
+
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  background: $background;
+  color: $green;
+  font-family: 'Roboto', sans-serif;
+  // overflow: hidden;
+}
+
+.container__main {
+  margin-bottom: 13vh;
+}
+
+.choose-teams {
+  padding: 1rem 3rem;
+}
+
+
+.my-teams {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+.Toastify__toast-container {
+  width: 60%;
+  text-align: center;
+}
+
+.Toastify__toast {
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.Toastify__toast--default {
+  background: #fff;
+  color: #aaa;
+}
+
+.Toastify__toast--info {
+  background: #3498db;
+}
+
+.Toastify__toast--success {
+  background: #07bc0c;
+}
+
+.Toastify__toast--error {
+  background: #f44941;
+}
+
+// #343a40
+// linear-gradient( 45deg,#383d42,#40454b)

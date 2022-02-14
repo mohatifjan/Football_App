@@ -1,0 +1,52 @@
+@import '../../base.scss';
+
+.metaData {
+    // padding: 1rem;
+
+    &__header {
+
+        // display: flex;
+        // justify-content: space-between;
+        // margin-bottom: 1rem;
+        // align-items: center;
+        img {
+            width: 40px;
+            height: 40px;
+            // background: #fff;
+            padding: 0.2rem;
+            border-radius: 5px;
+        }
+    }
+
+    &__body {
+        font-size: 2rem;
+        // align-items: center;
+        // display: flex;
+        // justify-content: space-between;
+
+        img {
+            width: 120px;
+            height: 120px;
+            //! color
+            background: #343a40;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+    }
+
+    // &__score {
+    //     margin: 0 1rem;
+    // }
+
+}
+
+@media(max-width:$breakpoint-tablet) {
+    .metaData__body {
+        font-size: 1.5rem;
+
+        img {
+            width: 85px;
+            height: 85px;
+        }
+    }
+}
